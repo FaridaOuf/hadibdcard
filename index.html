@@ -1074,6 +1074,36 @@ h1.big-title {
   .scrapbook-page { gap: 25px; }
   .balloon-left, .balloon-right { display: none; }
 }
+  .letter-container {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fffdf9; /* Soft paper tint */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: 'Georgia', serif; /* Classic letter serif */
+}
+
+.letter-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+#letterText {
+  font-size: 1rem;
+  line-height: 1.7; /* Crucial for readability */
+  color: #444;
+  margin: 0;
+}
+
+.letter-sign-off {
+  margin-top: 24px;
+  font-weight: 700;
+  color: var(--accent, #2e7d32);
+  text-align: right; /* Signs off nicely at the bottom-right */
+}
 </style>
 </head>
 <body>
@@ -1607,12 +1637,17 @@ h1.big-title {
         </svg>
 
         <div class="gingham-tape" style="top: -14px; right: -15px; transform: rotate(-18deg);"></div>
-
-        <div class="letter-heading">Dear Hadi,</div>
-        <span id="letterText">Happy birthday!</span>
-        <div style="margin-top: 15px; font-weight:700; color:var(--accent);" id="signOff">— from all 8 of us who love you 💚</div>
-      </div>
-
+        <div class="letter-container">
+          <div class="letter-heading">Dear Hadi,</div>
+          <p id="letterText">
+            We had to express our love for you today, and everyone cringed in extraordinary ways you can’t even imagine. Having you as our best friend and one of our boyfriends has indeed been a blessing. A blessing to our wallets because we didn’t have to go to therapy, and a blessing to our hearts for finding the true meaning of friendship, kindness, and the exact right amount of awkwardness.
+            <br><br>
+            Our girlypop, burkaat’s lil mallu shawty, and charming prince (#Joel’s)—we wish you a lifetime full of success, happiness, and more of “go for it”. Shine bright like a diamond, my friend.
+          </p>
+          <div class="letter-sign-off" id="signOff">
+            -from all of us who love you 💚
+          </div>
+        </div>
       <svg class="doodle-balloon-group balloon-left" viewBox="0 0 100 120">
         <ellipse cx="40" cy="35" rx="22" ry="28" fill="var(--accent-light)" stroke="var(--line)" stroke-width="3"/>
         <circle cx="33" cy="30" r="2.5" fill="var(--line)"/>
