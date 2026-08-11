@@ -226,12 +226,13 @@
   width: 100%;
   max-width: 420px;
 }
-.scrap-video iframe {
+.scrap-video iframe, .scrap-video video {
   width: 100%;
   aspect-ratio: 16/9;
   border: 2px solid var(--line);
   background: var(--accent-light);
   border-radius: 4px;
+  object-fit: cover;
 }
 .scrap-video .cap {
   font-family: var(--font-display);
@@ -1211,7 +1212,10 @@ h1.big-title {
     <div class="scrapbook-layout">
       <div class="scrap-video" style="--rot: -2deg;">
         <div class="washi-tape tape-top-center"></div>
-        <iframe src="https://www.youtube-nocookie.com/embed/nBv5BzFpvvE" title="Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <video controls playsinline preload="metadata">
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
         <div class="cap">
           <svg class="doodle-cam" viewBox="0 0 100 60" fill="var(--accent-light)" stroke="var(--line)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
             <rect x="10" y="15" width="55" height="40" rx="4"/>
